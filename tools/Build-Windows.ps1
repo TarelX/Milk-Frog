@@ -1,7 +1,8 @@
 param([string]$Configuration='Release')
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path -Parent $PSScriptRoot
-$version='0.1.3'
+[xml]$appProject=Get-Content -LiteralPath (Join-Path $projectRoot 'src\MilkFrog.App\MilkFrog.App.csproj') -Raw
+$version=[string]$appProject.Project.PropertyGroup.Version
 $environmentNames=@('DOTNET_CLI_HOME','NUGET_PACKAGES','MSBuildEnableWorkloadResolver','DOTNET_CLI_TELEMETRY_OPTOUT','DOTNET_SKIP_FIRST_TIME_EXPERIENCE')
 $previousEnvironment=@{}
 foreach($name in $environmentNames){$previousEnvironment[$name]=[Environment]::GetEnvironmentVariable($name,'Process')}
@@ -21,6 +22,7 @@ try {
   dotnet publish (Join-Path $projectRoot 'src\MilkFrog.App\MilkFrog.App.csproj') -c $Configuration --artifacts-path $artifacts -r win-x64 --self-contained false -o $output --nologo -p:RestoreIgnoreFailedSources=true -p:PublishSingleFile=true -p:DebugType=None -p:DebugSymbols=false
   if($LASTEXITCODE -ne 0){throw 'Publish failed'}
   Copy-Item -LiteralPath (Join-Path $projectRoot 'README.md') -Destination (Join-Path $output 'README.md') -Force
+  Copy-Item -LiteralPath (Join-Path $projectRoot 'LICENSE') -Destination (Join-Path $output 'LICENSE') -Force
   $package=Join-Path $projectRoot "dist\MilkFrog-Windows-$version.zip"
   Compress-Archive -LiteralPath $output -DestinationPath $package -Force
   $hash=Get-FileHash -Algorithm SHA256 -LiteralPath $package

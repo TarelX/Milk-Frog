@@ -70,6 +70,7 @@ internal static class Tests
                 var theme = typeof(FrogApplication).Assembly.GetType("MilkFrog.App.Theme")!;
                 theme.GetMethod("Install", BindingFlags.NonPublic | BindingFlags.Static)!.Invoke(null, new object[] { new ResourceDictionary() });
             });
+            Test("native topmost survives layer changes and respects settings without focus theft", WindowLayerChecks.Run);
             Test("application icon contains visible multi-size images", () =>
             {
                 var icon = File.ReadAllBytes(Path.Combine(root, "src", "MilkFrog.App", "Assets", "app.ico"));

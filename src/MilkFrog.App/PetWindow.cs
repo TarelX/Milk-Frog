@@ -50,7 +50,7 @@ public sealed class PetWindow : Window, IDisposable
         app = application;
         Title = "奶蛙"; Width = Height = app.Game.State.Settings.Size;
         WindowStyle = WindowStyle.None; ResizeMode = ResizeMode.NoResize; AllowsTransparency = true;
-        Background = Brushes.Transparent; ShowInTaskbar = false; ShowActivated = false;
+        Background = Brushes.Transparent; ShowInTaskbar = false; ShowActivated = false; Topmost = app.Game.State.Settings.Topmost;
         FontFamily = new FontFamily("Microsoft YaHei UI"); Cursor = Cursors.Hand;
         petSurface.Children.Add(image); petSurface.Children.Add(sleepMarks); Content = petSurface;
         BuildSleepMarks();
@@ -69,6 +69,7 @@ public sealed class PetWindow : Window, IDisposable
         {
             handle = new WindowInteropHelper(this).Handle; source = HwndSource.FromHwnd(handle); source.AddHook(WindowHook);
             NativeMethods.SetWindowLong(handle, NativeMethods.GwlExStyle, NativeMethods.GetWindowLong(handle, NativeMethods.GwlExStyle) | NativeMethods.WsExToolWindow | NativeMethods.WsExNoActivate);
+            SyncTopmost();
         };
         Loaded += (_, _) => { ApplySettings(); RestorePosition(); ResumeAnimation(); };
         SizeChanged += (_, _) => { PositionSleepMarks(); if (handle != 0 && player.Current is not null) NativeMethods.ApplyRegion(handle, player.Current, false, sleepMarks.Visibility == Visibility.Visible); };
@@ -270,8 +271,9 @@ public sealed class PetWindow : Window, IDisposable
         Width = Height = app.Game.State.Settings.Size; Topmost = app.Game.State.Settings.Topmost;
         player.Speed = app.Game.State.Settings.Speed; player.ReducedMotion = app.Game.State.Settings.ReducedMotion; player.Refresh();
         if (!app.Game.State.Settings.ShowBubbles) bubble.IsOpen = false;
-        Dispatcher.BeginInvoke(() => { if (handle != 0) ClampPosition(); });
+        Dispatcher.BeginInvoke(() => { if (handle != 0) { SyncTopmost(); ClampPosition(); } });
     }
+    private void SyncTopmost() => NativeMethods.ApplyTopmost(handle, app.Game.State.Settings.Topmost);
     private void RestorePosition(bool primary = false)
     {
         var area = Forms.Screen.PrimaryScreen!.WorkingArea;
@@ -291,11 +293,12 @@ public sealed class PetWindow : Window, IDisposable
     }
     public void SavePosition() { if (handle != 0 && NativeMethods.GetWindowRect(handle, out var r)) { app.Game.State.Settings.X = r.Left; app.Game.State.Settings.Y = r.Top; } }
     public void HidePet() { manualHidden = true; toolbar.IsOpen = bubble.IsOpen = false; Hide(); app.Panel?.Hide(); }
-    public void RestorePet() { manualHidden = false; if (!IsVisible) Show(); ClampPosition(); }
+    public void RestorePet() { manualHidden = false; if (!IsVisible) Show(); SyncTopmost(); ClampPosition(); }
     private nint WindowHook(nint hwnd, int message, nint w, nint l, ref bool handled)
     {
         if (message == NativeMethods.WmMouseActivate) { handled = true; return 3; }
-        if (message == NativeMethods.WmDisplayChange || message == NativeMethods.WmDpiChanged) Dispatcher.BeginInvoke(() => { ClampPosition(); if (player.Current is not null) NativeMethods.ApplyRegion(handle, player.Current, false, sleepMarks.Visibility == Visibility.Visible); });
+        if (message == NativeMethods.WmWindowPosChanging) NativeMethods.PreserveTopmost(l, app.Game.State.Settings.Topmost);
+        if (message == NativeMethods.WmDisplayChange || message == NativeMethods.WmDpiChanged) Dispatcher.BeginInvoke(() => { SyncTopmost(); ClampPosition(); if (player.Current is not null) NativeMethods.ApplyRegion(handle, player.Current, false, sleepMarks.Visibility == Visibility.Visible); });
         return 0;
     }
     private void Tick(object? sender, EventArgs e)
@@ -304,6 +307,7 @@ public sealed class PetWindow : Window, IDisposable
         var now = DateTimeOffset.UtcNow;
         if ((now - lastGameTick).TotalSeconds >= 1)
         {
+            if (IsVisible && app.Game.State.Settings.Topmost && !NativeMethods.IsTopmost(handle)) SyncTopmost();
             var completed = app.Game.Advance(now - lastGameTick, now); lastGameTick = now;
             if (completed is not null) { if (!dragging) Perform(completed); else app.Changed(); }
             if (playButton is not null)

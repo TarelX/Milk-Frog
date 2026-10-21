@@ -7,15 +7,22 @@ namespace MilkFrog.App;
 
 internal static class NativeMethods
 {
-    internal const int GwlExStyle = -20, WsExToolWindow = 0x80, WsExNoActivate = 0x08000000;
-    internal const int WmDpiChanged = 0x02E0, WmDisplayChange = 0x007E, WmMouseActivate = 0x0021;
-    internal const uint SwpNoSize = 1, SwpNoZOrder = 4, SwpNoActivate = 0x10;
+    internal const int GwlExStyle = -20, WsExTopmost = 0x8, WsExToolWindow = 0x80, WsExNoActivate = 0x08000000;
+    internal const int WmDpiChanged = 0x02E0, WmDisplayChange = 0x007E, WmMouseActivate = 0x0021, WmWindowPosChanging = 0x0046;
+    internal const uint SwpNoSize = 1, SwpNoMove = 2, SwpNoZOrder = 4, SwpNoActivate = 0x10;
+    internal static readonly nint HwndTopmost = new(-1), HwndNotTopmost = new(-2);
     [StructLayout(LayoutKind.Sequential)] internal struct Point { public int X, Y; }
     [StructLayout(LayoutKind.Sequential)] internal struct Rect
     {
         public int Left, Top, Right, Bottom;
         public int Width => Right - Left;
         public int Height => Bottom - Top;
+    }
+    [StructLayout(LayoutKind.Sequential)] internal struct WindowPos
+    {
+        public nint Window, InsertAfter;
+        public int X, Y, Width, Height;
+        public uint Flags;
     }
     [DllImport("user32.dll")] internal static extern bool GetCursorPos(out Point point);
     [DllImport("user32.dll")] internal static extern bool GetWindowRect(nint window, out Rect rect);
@@ -26,6 +33,24 @@ internal static class NativeMethods
     [DllImport("gdi32.dll")] private static extern nint ExtCreateRegion(nint transform, uint count, byte[] data);
     [DllImport("gdi32.dll")] private static extern bool DeleteObject(nint handle);
     [DllImport("user32.dll")] internal static extern bool DestroyIcon(nint icon);
+
+    internal static void ApplyTopmost(nint window, bool enabled)
+    {
+        if (window == 0) return;
+        SetWindowPos(window, enabled ? HwndTopmost : HwndNotTopmost, 0, 0, 0, 0, SwpNoMove | SwpNoSize | SwpNoActivate);
+    }
+
+    internal static bool IsTopmost(nint window) => window != 0 && (GetWindowLong(window, GwlExStyle) & WsExTopmost) != 0;
+
+    internal static void PreserveTopmost(nint positionPointer, bool enabled)
+    {
+        if (!enabled || positionPointer == 0) return;
+        var position = Marshal.PtrToStructure<WindowPos>(positionPointer);
+        // Ordinary moves keep their Z order; only guard requests that actually reorder the window.
+        if ((position.Flags & SwpNoZOrder) != 0 || position.InsertAfter == HwndTopmost) return;
+        position.InsertAfter = HwndTopmost;
+        Marshal.StructureToPtr(position, positionPointer, false);
+    }
 
     // Give Windows a silhouette rather than a rectangular invisible mouse-blocking window.
     internal static void ApplyRegion(nint window, SpriteBitmap sprite, bool rectangle = false, bool includeSleepMarks = false)
