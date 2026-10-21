@@ -1,0 +1,1583 @@
+[
+  {
+    "id": "bath-out",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/bath-out/00.png",
+        "sourceBounds": [
+          89,
+          13,
+          278,
+          411
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/01.png",
+        "sourceBounds": [
+          84,
+          14,
+          271,
+          410
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/02.png",
+        "sourceBounds": [
+          37,
+          18,
+          349,
+          406
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/03.png",
+        "sourceBounds": [
+          84,
+          30,
+          297,
+          394
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/04.png",
+        "sourceBounds": [
+          52,
+          18,
+          313,
+          382
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/05.png",
+        "sourceBounds": [
+          53,
+          28,
+          341,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/06.png",
+        "sourceBounds": [
+          58,
+          46,
+          321,
+          353
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath-out/07.png",
+        "sourceBounds": [
+          59,
+          46,
+          318,
+          353
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "bath",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/bath/00.png",
+        "sourceBounds": [
+          74,
+          60,
+          317,
+          362
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/01.png",
+        "sourceBounds": [
+          89,
+          60,
+          277,
+          362
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/02.png",
+        "sourceBounds": [
+          83,
+          37,
+          273,
+          385
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/03.png",
+        "sourceBounds": [
+          77,
+          34,
+          272,
+          387
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/04.png",
+        "sourceBounds": [
+          95,
+          26,
+          282,
+          385
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/05.png",
+        "sourceBounds": [
+          89,
+          22,
+          275,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/06.png",
+        "sourceBounds": [
+          52,
+          22,
+          338,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/bath/07.png",
+        "sourceBounds": [
+          56,
+          49,
+          318,
+          362
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "drag",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/drag/00.png",
+        "sourceBounds": [
+          54,
+          45,
+          337,
+          376
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/01.png",
+        "sourceBounds": [
+          51,
+          45,
+          344,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/02.png",
+        "sourceBounds": [
+          65,
+          45,
+          316,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/03.png",
+        "sourceBounds": [
+          72,
+          45,
+          303,
+          359
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/04.png",
+        "sourceBounds": [
+          69,
+          44,
+          308,
+          347
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/05.png",
+        "sourceBounds": [
+          67,
+          44,
+          311,
+          348
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/06.png",
+        "sourceBounds": [
+          68,
+          45,
+          310,
+          347
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drag/07.png",
+        "sourceBounds": [
+          70,
+          45,
+          308,
+          347
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "drink",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/drink/00.png",
+        "sourceBounds": [
+          75,
+          41,
+          293,
+          377
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/01.png",
+        "sourceBounds": [
+          81,
+          41,
+          282,
+          377
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/02.png",
+        "sourceBounds": [
+          82,
+          41,
+          281,
+          377
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/03.png",
+        "sourceBounds": [
+          84,
+          40,
+          277,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/04.png",
+        "sourceBounds": [
+          86,
+          39,
+          272,
+          380
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/05.png",
+        "sourceBounds": [
+          85,
+          41,
+          274,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/06.png",
+        "sourceBounds": [
+          82,
+          41,
+          281,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/drink/07.png",
+        "sourceBounds": [
+          75,
+          41,
+          294,
+          378
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "happy",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/happy/00.png",
+        "sourceBounds": [
+          72,
+          95,
+          302,
+          328
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/01.png",
+        "sourceBounds": [
+          77,
+          129,
+          289,
+          295
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/02.png",
+        "sourceBounds": [
+          47,
+          92,
+          343,
+          331
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/03.png",
+        "sourceBounds": [
+          43,
+          66,
+          339,
+          312
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/04.png",
+        "sourceBounds": [
+          60,
+          51,
+          345,
+          314
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/05.png",
+        "sourceBounds": [
+          51,
+          116,
+          353,
+          284
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/06.png",
+        "sourceBounds": [
+          53,
+          78,
+          343,
+          323
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/happy/07.png",
+        "sourceBounds": [
+          70,
+          86,
+          302,
+          329
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "idle",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/idle/00.png",
+        "sourceBounds": [
+          49,
+          27,
+          346,
+          399
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/01.png",
+        "sourceBounds": [
+          50,
+          27,
+          345,
+          399
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/02.png",
+        "sourceBounds": [
+          50,
+          27,
+          345,
+          399
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/03.png",
+        "sourceBounds": [
+          50,
+          27,
+          345,
+          399
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/04.png",
+        "sourceBounds": [
+          49,
+          26,
+          346,
+          400
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/05.png",
+        "sourceBounds": [
+          50,
+          27,
+          344,
+          399
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/06.png",
+        "sourceBounds": [
+          50,
+          25,
+          345,
+          401
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/idle/07.png",
+        "sourceBounds": [
+          50,
+          26,
+          345,
+          400
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "play-v2",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/play-v2/00.png",
+        "sourceBounds": [
+          64,
+          74,
+          305,
+          344
+        ],
+        "keptComponents": 2
+      },
+      {
+        "file": "frames/play-v2/01.png",
+        "sourceBounds": [
+          69,
+          79,
+          355,
+          342
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/play-v2/02.png",
+        "sourceBounds": [
+          63,
+          83,
+          350,
+          338
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/play-v2/03.png",
+        "sourceBounds": [
+          58,
+          83,
+          368,
+          338
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/play-v2/04.png",
+        "sourceBounds": [
+          64,
+          76,
+          359,
+          331
+        ],
+        "keptComponents": 2
+      },
+      {
+        "file": "frames/play-v2/05.png",
+        "sourceBounds": [
+          69,
+          74,
+          338,
+          333
+        ],
+        "keptComponents": 2
+      },
+      {
+        "file": "frames/play-v2/06.png",
+        "sourceBounds": [
+          66,
+          62,
+          333,
+          345
+        ],
+        "keptComponents": 2
+      },
+      {
+        "file": "frames/play-v2/07.png",
+        "sourceBounds": [
+          66,
+          63,
+          304,
+          344
+        ],
+        "keptComponents": 2
+      }
+    ]
+  },
+  {
+    "id": "pudding",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/pudding/00.png",
+        "sourceBounds": [
+          60,
+          43,
+          304,
+          381
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/01.png",
+        "sourceBounds": [
+          66,
+          43,
+          306,
+          381
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/02.png",
+        "sourceBounds": [
+          66,
+          43,
+          306,
+          381
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/03.png",
+        "sourceBounds": [
+          68,
+          43,
+          303,
+          381
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/04.png",
+        "sourceBounds": [
+          70,
+          34,
+          304,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/05.png",
+        "sourceBounds": [
+          55,
+          33,
+          318,
+          380
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/06.png",
+        "sourceBounds": [
+          65,
+          35,
+          306,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/pudding/07.png",
+        "sourceBounds": [
+          69,
+          34,
+          305,
+          379
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "sad",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/sad/00.png",
+        "sourceBounds": [
+          58,
+          56,
+          327,
+          364
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/01.png",
+        "sourceBounds": [
+          58,
+          61,
+          327,
+          359
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/02.png",
+        "sourceBounds": [
+          58,
+          64,
+          327,
+          356
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/03.png",
+        "sourceBounds": [
+          62,
+          65,
+          320,
+          355
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/04.png",
+        "sourceBounds": [
+          61,
+          66,
+          321,
+          351
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/05.png",
+        "sourceBounds": [
+          58,
+          48,
+          326,
+          369
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/06.png",
+        "sourceBounds": [
+          58,
+          48,
+          326,
+          369
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sad/07.png",
+        "sourceBounds": [
+          59,
+          48,
+          325,
+          369
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "sick",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/sick/00.png",
+        "sourceBounds": [
+          74,
+          42,
+          331,
+          382
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/01.png",
+        "sourceBounds": [
+          73,
+          42,
+          333,
+          382
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/02.png",
+        "sourceBounds": [
+          76,
+          42,
+          331,
+          382
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/03.png",
+        "sourceBounds": [
+          80,
+          42,
+          326,
+          382
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/04.png",
+        "sourceBounds": [
+          74,
+          41,
+          331,
+          383
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/05.png",
+        "sourceBounds": [
+          73,
+          41,
+          333,
+          383
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/06.png",
+        "sourceBounds": [
+          74,
+          41,
+          332,
+          383
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sick/07.png",
+        "sourceBounds": [
+          74,
+          41,
+          332,
+          383
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "sleep",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/sleep/00.png",
+        "sourceBounds": [
+          46,
+          40,
+          351,
+          395
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/01.png",
+        "sourceBounds": [
+          46,
+          40,
+          355,
+          395
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/02.png",
+        "sourceBounds": [
+          79,
+          43,
+          325,
+          392
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/03.png",
+        "sourceBounds": [
+          78,
+          89,
+          289,
+          345
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/04.png",
+        "sourceBounds": [
+          77,
+          84,
+          316,
+          318
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/05.png",
+        "sourceBounds": [
+          71,
+          71,
+          313,
+          331
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/06.png",
+        "sourceBounds": [
+          65,
+          68,
+          315,
+          334
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/sleep/07.png",
+        "sourceBounds": [
+          61,
+          71,
+          313,
+          331
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "snack",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/snack/00.png",
+        "sourceBounds": [
+          84,
+          50,
+          274,
+          371
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/01.png",
+        "sourceBounds": [
+          86,
+          46,
+          272,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/02.png",
+        "sourceBounds": [
+          87,
+          46,
+          270,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/03.png",
+        "sourceBounds": [
+          87,
+          46,
+          270,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/04.png",
+        "sourceBounds": [
+          86,
+          48,
+          270,
+          374
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/05.png",
+        "sourceBounds": [
+          86,
+          46,
+          271,
+          376
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/06.png",
+        "sourceBounds": [
+          86,
+          47,
+          271,
+          375
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/snack/07.png",
+        "sourceBounds": [
+          86,
+          49,
+          272,
+          373
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "stretch",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/stretch/00.png",
+        "sourceBounds": [
+          64,
+          62,
+          336,
+          364
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/01.png",
+        "sourceBounds": [
+          90,
+          61,
+          306,
+          365
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/02.png",
+        "sourceBounds": [
+          90,
+          57,
+          306,
+          369
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/03.png",
+        "sourceBounds": [
+          50,
+          54,
+          344,
+          372
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/04.png",
+        "sourceBounds": [
+          68,
+          29,
+          342,
+          374
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/05.png",
+        "sourceBounds": [
+          51,
+          40,
+          350,
+          363
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/06.png",
+        "sourceBounds": [
+          43,
+          47,
+          366,
+          355
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/stretch/07.png",
+        "sourceBounds": [
+          58,
+          45,
+          333,
+          358
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "study",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/study/00.png",
+        "sourceBounds": [
+          49,
+          13,
+          345,
+          420
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/01.png",
+        "sourceBounds": [
+          49,
+          13,
+          345,
+          420
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/02.png",
+        "sourceBounds": [
+          49,
+          13,
+          340,
+          420
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/03.png",
+        "sourceBounds": [
+          50,
+          13,
+          344,
+          420
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/04.png",
+        "sourceBounds": [
+          49,
+          12,
+          345,
+          421
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/05.png",
+        "sourceBounds": [
+          49,
+          12,
+          345,
+          421
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/06.png",
+        "sourceBounds": [
+          49,
+          12,
+          346,
+          421
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/study/07.png",
+        "sourceBounds": [
+          50,
+          12,
+          344,
+          421
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "walk",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/walk/00.png",
+        "sourceBounds": [
+          71,
+          38,
+          314,
+          380
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/01.png",
+        "sourceBounds": [
+          71,
+          38,
+          310,
+          373
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/02.png",
+        "sourceBounds": [
+          71,
+          38,
+          310,
+          373
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/03.png",
+        "sourceBounds": [
+          60,
+          38,
+          315,
+          378
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/04.png",
+        "sourceBounds": [
+          60,
+          38,
+          311,
+          374
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/05.png",
+        "sourceBounds": [
+          73,
+          38,
+          308,
+          362
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/06.png",
+        "sourceBounds": [
+          71,
+          38,
+          314,
+          379
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/walk/07.png",
+        "sourceBounds": [
+          72,
+          38,
+          314,
+          381
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "wave",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/wave/00.png",
+        "sourceBounds": [
+          60,
+          49,
+          321,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/01.png",
+        "sourceBounds": [
+          61,
+          49,
+          320,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/02.png",
+        "sourceBounds": [
+          52,
+          49,
+          330,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/03.png",
+        "sourceBounds": [
+          32,
+          49,
+          349,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/04.png",
+        "sourceBounds": [
+          64,
+          49,
+          317,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/05.png",
+        "sourceBounds": [
+          39,
+          49,
+          342,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/06.png",
+        "sourceBounds": [
+          60,
+          49,
+          322,
+          370
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/wave/07.png",
+        "sourceBounds": [
+          61,
+          49,
+          320,
+          370
+        ],
+        "keptComponents": 1
+      }
+    ]
+  },
+  {
+    "id": "work",
+    "canvas": [
+      512,
+      512
+    ],
+    "sourceCell": [
+      444,
+      444
+    ],
+    "frames": [
+      {
+        "file": "frames/work/00.png",
+        "sourceBounds": [
+          86,
+          34,
+          280,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/01.png",
+        "sourceBounds": [
+          85,
+          34,
+          281,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/02.png",
+        "sourceBounds": [
+          85,
+          34,
+          282,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/03.png",
+        "sourceBounds": [
+          86,
+          34,
+          280,
+          389
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/04.png",
+        "sourceBounds": [
+          86,
+          34,
+          280,
+          390
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/05.png",
+        "sourceBounds": [
+          85,
+          34,
+          281,
+          390
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/06.png",
+        "sourceBounds": [
+          85,
+          34,
+          282,
+          390
+        ],
+        "keptComponents": 1
+      },
+      {
+        "file": "frames/work/07.png",
+        "sourceBounds": [
+          86,
+          34,
+          280,
+          390
+        ],
+        "keptComponents": 1
+      }
+    ]
+  }
+]

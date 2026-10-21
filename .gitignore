@@ -1,0 +1,28 @@
+# Visual Studio and editors
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# .NET build outputs
+**/bin/
+**/obj/
+TestResults/
+artifacts/
+dist/
+
+# Local SDK and package caches
+.dotnet-home/
+.nuget/
+
+# Runtime data and diagnostics
+UserData/
+**/UserData/
+*.log
+startup.log
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store

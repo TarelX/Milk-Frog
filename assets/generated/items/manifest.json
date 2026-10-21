@@ -1,0 +1,74 @@
+{
+  "collectionId": "milk-frog-basic-items",
+  "version": 1,
+  "canvas": {
+    "width": 1254,
+    "height": 1254,
+    "format": "png",
+    "colorSpace": "sRGB",
+    "background": "transparent"
+  },
+  "items": {
+    "milkCup": {
+      "file": "milk-cup.png",
+      "type": "food",
+      "price": 10,
+      "consumedOnUse": true,
+      "effects": {
+        "hunger": 30,
+        "mood": 5
+      }
+    },
+    "milkPudding": {
+      "file": "milk-pudding.png",
+      "type": "food",
+      "price": 18,
+      "consumedOnUse": true,
+      "effects": {
+        "hunger": 20,
+        "mood": 15
+      }
+    },
+    "grassDumplings": {
+      "file": "grass-dumplings.png",
+      "type": "food",
+      "price": 14,
+      "consumedOnUse": true,
+      "effects": {
+        "hunger": 25,
+        "health": 3
+      }
+    },
+    "bubbleWand": {
+      "file": "bubble-wand.png",
+      "type": "cleaning",
+      "price": 8,
+      "consumedOnUse": true,
+      "effects": {
+        "cleanliness": 25
+      }
+    },
+    "bathWash": {
+      "file": "bath-wash.png",
+      "type": "cleaning",
+      "price": 15,
+      "consumedOnUse": true,
+      "effects": {
+        "cleanliness": 45,
+        "mood": 5
+      }
+    },
+    "toyBall": {
+      "file": "toy-ball.png",
+      "type": "toy",
+      "price": 30,
+      "consumedOnUse": false,
+      "action": "playBall",
+      "effects": {
+        "mood": 15,
+        "energy": -5
+      }
+    }
+  }
+}
+

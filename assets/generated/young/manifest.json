@@ -1,0 +1,87 @@
+{
+  "characterId": "milk-frog",
+  "stage": "young",
+  "version": 3,
+  "animationCatalog": "animations/animations.json",
+  "animationFrameSize": [512, 512],
+  "canvas": {
+    "width": 1254,
+    "height": 1254,
+    "format": "png",
+    "colorSpace": "sRGB",
+    "background": "transparent"
+  },
+  "sprites": {
+    "idle": {
+      "file": "idle.png",
+      "loop": true
+    },
+    "blink": {
+      "file": "blink-v2.png",
+      "durationMs": 110,
+      "returnsTo": "idle"
+    },
+    "happy": {
+      "file": "happy.png",
+      "durationMs": 1800,
+      "returnsTo": "idle"
+    },
+    "sad": {
+      "file": "sad.png",
+      "durationMs": 3200,
+      "returnsTo": "idle"
+    },
+    "eat": {
+      "file": "eat.png",
+      "durationMs": 3600,
+      "returnsTo": "happy"
+    },
+    "sleep": {
+      "file": "sleep.png",
+      "loop": true
+    },
+    "drag": {
+      "file": "drag.png",
+      "loop": true
+    },
+    "victory": {
+      "file": "victory-v2.png",
+      "durationMs": 2200,
+      "returnsTo": "idle"
+    },
+    "confident": {
+      "file": "confident.png",
+      "durationMs": 2600,
+      "returnsTo": "idle"
+    },
+    "dirty": {
+      "file": "dirty.png",
+      "loop": true,
+      "condition": "cleanliness < 30"
+    },
+    "bathHappy": {
+      "file": "bath-happy.png",
+      "durationMs": 2600,
+      "returnsTo": "idle"
+    },
+    "yawn": {
+      "file": "yawn.png",
+      "durationMs": 2200,
+      "returnsTo": "idle"
+    },
+    "sick": {
+      "file": "sick.png",
+      "loop": true,
+      "condition": "health < 40"
+    },
+    "study": {
+      "file": "study.png",
+      "loop": true
+    },
+    "work": {
+      "file": "work.png",
+      "loop": true
+    }
+  }
+}
+

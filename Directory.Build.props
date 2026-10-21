@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Ti</Authors>
+    <Company>Ti</Company>
+    <Product>MilkFrog</Product>
+    <Description>Windows 原生幼年奶蛙桌面宠物</Description>
+    <Copyright>Copyright © 2026 Ti</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

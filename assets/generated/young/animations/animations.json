@@ -1,0 +1,1007 @@
+{
+  "version": 1,
+  "stage": "young",
+  "canvas": {
+    "width": 512,
+    "height": 512,
+    "anchor": [
+      256,
+      462
+    ]
+  },
+  "sourceSheetCount": 17,
+  "uniqueFrames": 136,
+  "aliases": {
+    "eat": "drink",
+    "bath-happy": "bath",
+    "victory-v2": "victory",
+    "blink-v2": "blink"
+  },
+  "clips": {
+    "idle": {
+      "label": "待机与眨眼",
+      "frames": [
+        {
+          "file": "frames/idle/00.png",
+          "ms": 900
+        },
+        {
+          "file": "frames/idle/01.png",
+          "ms": 700
+        },
+        {
+          "file": "frames/idle/02.png",
+          "ms": 65
+        },
+        {
+          "file": "frames/idle/03.png",
+          "ms": 95
+        },
+        {
+          "file": "frames/idle/04.png",
+          "ms": 65
+        },
+        {
+          "file": "frames/idle/05.png",
+          "ms": 800
+        },
+        {
+          "file": "frames/idle/06.png",
+          "ms": 850
+        },
+        {
+          "file": "frames/idle/07.png",
+          "ms": 700
+        },
+        {
+          "file": "frames/idle/00.png",
+          "ms": 600
+        }
+      ],
+      "durationMs": 4775,
+      "loop": true
+    },
+    "blink": {
+      "label": "眨眼",
+      "frames": [
+        {
+          "file": "frames/idle/01.png",
+          "ms": 65
+        },
+        {
+          "file": "frames/idle/02.png",
+          "ms": 60
+        },
+        {
+          "file": "frames/idle/03.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/idle/04.png",
+          "ms": 65
+        },
+        {
+          "file": "frames/idle/05.png",
+          "ms": 100
+        }
+      ],
+      "durationMs": 390
+    },
+    "wave": {
+      "label": "挥手",
+      "frames": [
+        {
+          "file": "frames/wave/00.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/01.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/wave/02.png",
+          "ms": 130
+        },
+        {
+          "file": "frames/wave/03.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/04.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/03.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/04.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/05.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/06.png",
+          "ms": 130
+        },
+        {
+          "file": "frames/wave/07.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/wave/00.png",
+          "ms": 180
+        }
+      ],
+      "durationMs": 1680
+    },
+    "drink": {
+      "label": "喝奶",
+      "frames": [
+        {
+          "file": "frames/drink/00.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/drink/01.png",
+          "ms": 140
+        },
+        {
+          "file": "frames/drink/02.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/drink/03.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/drink/04.png",
+          "ms": 380
+        },
+        {
+          "file": "frames/drink/05.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/drink/04.png",
+          "ms": 300
+        },
+        {
+          "file": "frames/drink/05.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/drink/06.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/drink/07.png",
+          "ms": 280
+        }
+      ],
+      "durationMs": 2080
+    },
+    "snack": {
+      "label": "吃团子",
+      "frames": [
+        {
+          "file": "frames/snack/00.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/snack/01.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/snack/02.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/snack/03.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/snack/04.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/snack/05.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/snack/04.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/snack/05.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/snack/06.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/snack/07.png",
+          "ms": 230
+        }
+      ],
+      "durationMs": 1910
+    },
+    "pudding": {
+      "label": "吃布丁",
+      "frames": [
+        {
+          "file": "frames/pudding/00.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/pudding/01.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/pudding/02.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/pudding/03.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/pudding/04.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/pudding/05.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/pudding/06.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/pudding/07.png",
+          "ms": 250
+        }
+      ],
+      "durationMs": 1800
+    },
+    "bath": {
+      "label": "洗澡与抖泡泡",
+      "frames": [
+        {
+          "file": "frames/bath/00.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/bath/01.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/bath/02.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/05.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/05.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath-out/00.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/bath-out/01.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/bath-out/02.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/bath-out/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath-out/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath-out/05.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath-out/06.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath-out/07.png",
+          "ms": 280
+        }
+      ],
+      "durationMs": 3510
+    },
+    "bathRub": {
+      "label": "搓洗泡泡",
+      "frames": [
+        {
+          "file": "frames/bath/00.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/bath/01.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/02.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/05.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/06.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/bath/07.png",
+          "ms": 240
+        }
+      ],
+    "durationMs": 1560,
+      "loop": true,
+      "loopStart": 1
+    },
+    "happy": {
+      "label": "开心跳跃",
+      "frames": [
+        {
+          "file": "frames/happy/00.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/happy/01.png",
+          "ms": 140
+        },
+        {
+          "file": "frames/happy/02.png",
+          "ms": 90
+        },
+        {
+          "file": "frames/happy/03.png",
+          "ms": 110
+        },
+        {
+          "file": "frames/happy/04.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/happy/05.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/happy/06.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/07.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/happy/00.png",
+          "ms": 200
+        }
+      ],
+      "durationMs": 1160
+    },
+    "jump": {
+      "label": "小跳一下",
+      "frames": [
+        {
+          "file": "frames/happy/00.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/01.png",
+          "ms": 130
+        },
+        {
+          "file": "frames/happy/02.png",
+          "ms": 85
+        },
+        {
+          "file": "frames/happy/03.png",
+          "ms": 110
+        },
+        {
+          "file": "frames/happy/04.png",
+          "ms": 95
+        },
+        {
+          "file": "frames/happy/05.png",
+          "ms": 95
+        },
+        {
+          "file": "frames/happy/06.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/07.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/happy/00.png",
+          "ms": 180
+        }
+      ],
+      "durationMs": 1085
+    },
+    "victory": {
+      "label": "庆祝",
+      "frames": [
+        {
+          "file": "frames/happy/00.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/01.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/02.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/03.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/04.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/05.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/06.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/02.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/03.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/04.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/05.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/06.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/07.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/00.png",
+          "ms": 120
+        }
+      ],
+      "durationMs": 1680
+    },
+    "walk": {
+      "label": "小步走",
+      "frames": [
+        {
+          "file": "frames/walk/00.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/01.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/02.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/03.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/04.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/05.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/06.png",
+          "ms": 125
+        },
+        {
+          "file": "frames/walk/07.png",
+          "ms": 125
+        }
+      ],
+      "durationMs": 1000,
+      "loop": true
+    },
+    "sleep": {
+      "label": "入睡与呼吸",
+      "frames": [
+        {
+          "file": "frames/sleep/00.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/sleep/01.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/sleep/02.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/sleep/03.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/sleep/04.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/sleep/05.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/sleep/06.png",
+          "ms": 1300
+        },
+        {
+          "file": "frames/sleep/07.png",
+          "ms": 1300
+        }
+      ],
+      "durationMs": 4320,
+      "loop": true,
+      "loopStart": 6
+    },
+    "wake": {
+      "label": "醒来",
+      "frames": [
+        {
+          "file": "frames/sleep/07.png",
+          "ms": 230
+        },
+        {
+          "file": "frames/sleep/06.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sleep/05.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sleep/04.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sleep/03.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/sleep/02.png",
+          "ms": 210
+        },
+        {
+          "file": "frames/sleep/01.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/sleep/00.png",
+          "ms": 220
+        }
+      ],
+      "durationMs": 1600
+    },
+    "study": {
+      "label": "看书翻页",
+      "frames": [
+        {
+          "file": "frames/study/00.png",
+          "ms": 550
+        },
+        {
+          "file": "frames/study/01.png",
+          "ms": 350
+        },
+        {
+          "file": "frames/study/02.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/study/03.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/study/04.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/study/05.png",
+          "ms": 300
+        },
+        {
+          "file": "frames/study/06.png",
+          "ms": 110
+        },
+        {
+          "file": "frames/study/07.png",
+          "ms": 450
+        }
+      ],
+      "durationMs": 2310,
+      "loop": true
+    },
+    "work": {
+      "label": "记录写字",
+      "frames": [
+        {
+          "file": "frames/work/00.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/work/01.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/work/02.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/work/03.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/work/04.png",
+          "ms": 150
+        },
+        {
+          "file": "frames/work/05.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/work/06.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/work/07.png",
+          "ms": 220
+        }
+      ],
+      "durationMs": 1570,
+      "loop": true
+    },
+    "drag": {
+      "label": "拎起与悬空",
+      "frames": [
+        {
+          "file": "frames/drag/00.png",
+          "ms": 90
+        },
+        {
+          "file": "frames/drag/01.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/drag/02.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/drag/03.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/drag/04.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/drag/05.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/drag/06.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/drag/07.png",
+          "ms": 200
+        }
+      ],
+      "durationMs": 1350,
+      "loop": true,
+      "loopStart": 4
+    },
+    "land": {
+      "label": "落地回弹",
+      "frames": [
+        {
+          "file": "frames/drag/07.png",
+          "ms": 90
+        },
+        {
+          "file": "frames/drag/03.png",
+          "ms": 90
+        },
+        {
+          "file": "frames/drag/02.png",
+          "ms": 90
+        },
+        {
+          "file": "frames/happy/05.png",
+          "ms": 100
+        },
+        {
+          "file": "frames/happy/06.png",
+          "ms": 120
+        },
+        {
+          "file": "frames/happy/07.png",
+          "ms": 140
+        },
+        {
+          "file": "frames/happy/00.png",
+          "ms": 180
+        }
+      ],
+      "durationMs": 810
+    },
+    "sad": {
+      "label": "失落与恢复",
+      "frames": [
+        {
+          "file": "frames/sad/00.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/sad/01.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/sad/02.png",
+          "ms": 220
+        },
+        {
+          "file": "frames/sad/03.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/sad/04.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/sad/05.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sad/06.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/sad/07.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sad/00.png",
+          "ms": 180
+        }
+      ],
+      "durationMs": 2130
+    },
+    "sick": {
+      "label": "不舒服与暖饮",
+      "frames": [
+        {
+          "file": "frames/sick/00.png",
+          "ms": 550
+        },
+        {
+          "file": "frames/sick/01.png",
+          "ms": 300
+        },
+        {
+          "file": "frames/sick/02.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sick/03.png",
+          "ms": 550
+        },
+        {
+          "file": "frames/sick/04.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/sick/05.png",
+          "ms": 400
+        },
+        {
+          "file": "frames/sick/06.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/sick/07.png",
+          "ms": 500
+        }
+      ],
+      "durationMs": 2880,
+      "loop": true
+    },
+    "stretch": {
+      "label": "伸懒腰",
+      "frames": [
+        {
+          "file": "frames/stretch/00.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/stretch/01.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/stretch/02.png",
+          "ms": 350
+        },
+        {
+          "file": "frames/stretch/03.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/stretch/04.png",
+          "ms": 500
+        },
+        {
+          "file": "frames/stretch/05.png",
+          "ms": 260
+        },
+        {
+          "file": "frames/stretch/06.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/stretch/07.png",
+          "ms": 240
+        },
+        {
+          "file": "frames/stretch/00.png",
+          "ms": 180
+        }
+      ],
+      "durationMs": 2440
+    },
+    "yawn": {
+      "label": "打哈欠",
+      "frames": [
+        {
+          "file": "frames/stretch/00.png",
+          "ms": 160
+        },
+        {
+          "file": "frames/stretch/01.png",
+          "ms": 250
+        },
+        {
+          "file": "frames/stretch/02.png",
+          "ms": 500
+        },
+        {
+          "file": "frames/stretch/03.png",
+          "ms": 300
+        },
+        {
+          "file": "frames/stretch/02.png",
+          "ms": 300
+        },
+        {
+          "file": "frames/stretch/01.png",
+          "ms": 230
+        },
+        {
+          "file": "frames/stretch/00.png",
+          "ms": 200
+        }
+      ],
+      "durationMs": 1940
+    },
+    "play": {
+      "label": "拍拍小球",
+      "frames": [
+        {
+          "file": "frames/play-v2/00.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/play-v2/01.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/play-v2/02.png",
+          "ms": 170
+        },
+        {
+          "file": "frames/play-v2/03.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/play-v2/04.png",
+          "ms": 180
+        },
+        {
+          "file": "frames/play-v2/05.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/play-v2/06.png",
+          "ms": 190
+        },
+        {
+          "file": "frames/play-v2/07.png",
+          "ms": 200
+        },
+        {
+          "file": "frames/play-v2/00.png",
+          "ms": 240
+        }
+      ],
+      "durationMs": 1750
+    }
+  }
+}

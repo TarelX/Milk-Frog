@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>奶蛙 · 桌面陪伴原型</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="desktop.css">
+  <script defer src="../../assets/generated/young/animations/catalog.js"></script>
+  <script defer src="frame-player.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="review-bar"><span><span class="review-dot"></span> 奶蛙 · 桌面陪伴原型</span><span>悬停照料 · 右键更多</span><button type="button" class="preview-settings" data-action="settings">预览设置</button></div>
+  <div id="app"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="settings-dialog"><form method="dialog"><div class="dialog-head"><h2>陪伴设置</h2><button class="icon-button" aria-label="关闭设置" value="close">×</button></div><label class="setting-row"><span><strong>轻柔动作</strong><small>减少呼吸、弹跳等连续动态</small></span><input id="reduce-motion" type="checkbox"></label><label class="setting-row"><span><strong>陪伴气泡</strong><small>偶尔说一句它的小心情</small></span><input id="show-bubbles" type="checkbox" checked></label><div class="setting-row"><span><strong>角色大小</strong><small>调整桌面预览里的奶蛙</small></span><input id="pet-size" aria-label="角色大小" type="range" min="150" max="260" value="210"></div><button type="button" class="reset-button" id="reset-demo">重置预览数据</button><p class="dialog-note">这些设置仅作用于本界面原型。</p><button class="primary-button full" value="close">完成</button></form></dialog>
+  <dialog id="confirm-dialog"><form method="dialog"><div class="dialog-head"><h2 id="confirm-title"></h2><button class="icon-button" aria-label="关闭确认" value="cancel">×</button></div><p id="confirm-body"></p><div class="dialog-actions"><button class="secondary-button" value="cancel">再等等</button><button class="primary-button" id="confirm-action" value="accept">确认</button></div></form></dialog>
+</body>
+</html>
