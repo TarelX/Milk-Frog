@@ -79,6 +79,3 @@ dotnet build .\src\MilkFrog.App\MilkFrog.App.csproj -p:MilkFrogAssetRoot=D:\Priv
 ## 授权
 
 项目由 Ti 以 MIT License 开源，代码与仓库内素材均可依照许可证使用
-
-🔗 友情链接
-LINUX DO —— 真诚分享、友好讨论的技术社区，本项目的交流与反馈也发布于此
